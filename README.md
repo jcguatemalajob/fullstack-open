@@ -12,7 +12,7 @@ Each folder contains subfolders for each required exercise set.
 
 ## Author
 
-[Your Name] - [Your Email]
+Juan Carlos Guatemala Ortiz - jcguatemala.job
 
 ---
 
