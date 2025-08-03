@@ -1,0 +1,14 @@
+secuenceDiagram
+participant user
+participant browser
+participant server
+user->>browser: Type text and click "Save" button
+Note right of browser: the JS intercepts the form submit event avoing page reload
+browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Note right of browser: Only send the JSON with the new note {"content": "CLEAN DATA SPA","date": "2025-08-03T04:49:52.782Z"}
+activate server
+server-->>browser: 201 Created give application/json {"message":"note created"}
+deactivate server
+Note right of browser: The browser executes the callback function and the JS add the note to DOM that renders the spa
+
+    browser-->user: Show the new note witout reload the page
