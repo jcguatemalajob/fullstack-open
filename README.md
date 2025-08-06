@@ -5,7 +5,7 @@ This repository contains my solutions for the University of Helsinki Fullstack O
 ## Structure
 
 - **part0**: General web concepts, HTTP, CSS, and JavaScript excution normal and SPA.
-- **part1**:
+- **part1**: npm updated to 11.5.2,
 - **part2**:
 
 Each folder contains subfolders for each required exercise set.
