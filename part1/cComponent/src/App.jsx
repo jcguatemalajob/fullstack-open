@@ -27,14 +27,16 @@ const Hello = ({ name, age }) => {
 };
 
 //Passing state - to child
-const Display = (props) => {
-  return <div>{props.counter}</div>;
-};
+// const Display = (props) => {
+//   return <div>{props.counter}</div>;
+// };
+const Display = ({ counter }) => <div>{counter}</div>;
 
 //Passing state - to parent. Reusable component Button
-const Button = (props) => {
-  return <button onClick={props.onClick}>{props.text}</button>;
-};
+// const Button = (props) => {
+//   return <button onClick={props.onClick}>{props.text}</button>;
+// };
+const Button = ({ onClick, text }) => <button onClick={onClick}>{text}</button>;
 
 //To show the re-rendering of the component we are add props to the function App
 //And we are using the useState hook to add a state to the component
